@@ -1,0 +1,147 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+
+
+    h1 {
+        border: black 2px solid;
+        padding: 10px;
+        color: black;
+        text-align: center;
+        margin: 20px 5px 30px 15px;
+        background-color: burlywood;
+        width: 250px;
+        border: black 2px solid;
+
+    }
+
+    h2 {
+        border: black 2px solid;
+        margin: 25px 5px 30px 15px;
+        width: 180px;
+        background-color: darkgrey;
+    }
+
+    h3 {
+        border: black 2px solid;
+        margin: 20px 5px 30px 15px;
+        width: 115px;
+        background-color: cadetblue;
+        text-align: justify;
+    }
+
+    h4 {
+        color: midnightblue;
+        background-color: rgba(169, 169, 169, 0.366);
+        padding: 10px;
+        margin: 20px 5px 30px 15px;
+        border: black 2px solid;
+        text-align: justify;
+        width: 200px;
+        font-size: 15px;
+    }
+
+
+
+    .nav ul {
+        margin: 30px;
+        list-style-type: circle;
+
+    }
+
+
+
+    .parrafoNegrita {
+        padding-inline-start: 5px;
+        background-color: burlywood;
+        border: black 2px solid;
+        width: 150px;
+        font-weight: bolder;
+
+    }
+
+    .imgChica {
+        font: 16px black;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+    .bloque {
+        background-color: burlywood;
+        border: 3px solid black;
+        margin-left: 10px;
+        width: 700px;
+        height: 100px;
+        overflow: hidden;
+        display: block;
+
+
+
+    }
+
+    /*display:grid*/
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "nav header header header header"
+            "nav texto-introductorio texto-introductorio texto-introductorio aside"
+            "nav info-importante info-importante info-importante aside"
+            "nav footer footer footer footer";
+            align-items: stretch;
+            align-content: stretch;
+            justify-content: start;
+            justify-items: stretch;
+        }
+
+           
+    
+
+
+    .header {
+        background-color: burlywood;
+        grid-area: header;
+    }
+
+    .nav {
+        background-color: grey;
+        grid-area: nav;
+    }
+
+    .texto-introductorio {
+        background-color: aquamarine;
+        justify-self: center;
+        align-self: stretch;
+        grid-area: texto-introductorio;
+        flex-direction: column;
+    }
+    .info-importante{
+        background-color: bisque;
+        grid-area: info-importante
+        
+    }
+
+    .texto-relacionado {
+        background-color: cornflowerblue;
+        grid-area: aside;
+    }
+
+    .footer {
+        background-color: darkgrey;
+        grid-area: footer;
+    }
+    img{
+        width:  130px;
+    }
+        
+ 
+      
+      
+      
